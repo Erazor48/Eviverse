@@ -1,3 +1,38 @@
+🚀 Projet EVIverse
+⚠️ Ce projet est en cours de développement. Rien n’est encore finalisé, ni le frontend, ni le backend, ni ce README.
+Il s’agit d’un projet personnel évolutif que je fais progresser au fil de mes études.
+
+🎯 Objectif
+EVIverse est un projet fullstack basé sur un système d’intelligence artificielle ayant pour but de générer et manipuler des objets 3D à partir d’un prompt, d’images ou de fichiers 3D, dans une interface interactive type chatbot.
+À terme, il vise à devenir une plateforme permettant de collaborer avec une IA pour créer, affiner et gérer des projets 3D.
+
+🧱 Stack & Avancement
+Backend : FastAPI, SQLAlchemy (gestion des routes et base de données relationnelle)
+
+Frontend : React, TailwindCSS (UI en cours de construction)
+
+Scripts : Fichier manage.bat pour faciliter le lancement local du projet
+
+Base de données : SQLite (pour le développement)
+
+🧠 Parcours d’apprentissage
+Ce projet m’a permis (et continue de me permettre) d’apprendre :
+
+L’architecture backend avec FastAPI et les routes REST
+
+La gestion des bases de données avec SQLAlchemy
+
+Le scripting Batch pour automatiser le lancement
+
+Le développement frontend avec React et la conception d’interfaces utilisateur
+
+L’intégration d’une logique IA dans un flux d’application web
+
+📌 Note
+Ce dépôt ne contient pas encore de démonstration ou de version fonctionnelle complète, mais reflète mon avancée personnelle. Il constitue une preuve de concept que je suis déterminé à faire évoluer. Mon objectif est de livrer une première version utilisable où l’on peut dialoguer avec une IA et voir en temps réel les objets 3D générés.
+
+______________________________________________________________________________________________________________________________________________________________________________________________
+
 # EVIverse - Environnement Virtuel Interactif
 
 EVIverse est une plateforme qui permet de créer et manipuler des objets 3D à partir d'images, de texte et de modèles existants.
