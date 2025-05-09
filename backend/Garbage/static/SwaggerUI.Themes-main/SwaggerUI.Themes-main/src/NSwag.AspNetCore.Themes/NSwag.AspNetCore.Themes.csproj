@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\build\Common.Core.props" />
+  <Import Project="..\..\build\NuGet.props" />
+
+  <!-- Official Version -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <MajorVersion>2</MajorVersion>
+    <MinorVersion>0</MinorVersion>
+    <PatchVersion>0</PatchVersion>
+    <VersionSuffix></VersionSuffix>
+    <Version>$(MajorVersion).$(MinorVersion).$(PatchVersion)$(VersionSuffix)</Version>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>NSwag.AspNetCore.Themes</PackageId>
+    <Description>
+      Change theme to your Swagger API documentation in ASP.NET Core applications.
+    </Description>
+    <PackageTags>
+      extension;aspnetcore;swagger;swagger-ui;nswag;themes;dark-theme;modern
+    </PackageTags>
+    <IncludeBuildOutput>true</IncludeBuildOutput>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NSwag.AspNetCore" Version="14.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspNetCore.Swagger.Themes.Common\AspNetCore.Swagger.Themes.Common.csproj" PrivateAssets="all" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+  </PropertyGroup>
+  <Target Name="CopyProjectReferencesToPackage" DependsOnTargets="ResolveReferences">
+    <ItemGroup>
+      <BuildOutputInPackage Include="$(OutputPath)AspNetCore.Swagger.Themes.Common.dll" />
+    </ItemGroup>
+  </Target>
+
+</Project>

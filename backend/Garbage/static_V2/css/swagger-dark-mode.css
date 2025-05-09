@@ -1,0 +1,142 @@
+/* Mode sombre pour Swagger UI */
+:root {
+    --light-primary: #f0f2f5;
+    --light-secondary: #ffffff;
+    --light-text: #3b4151;
+    --light-text-secondary: #3b4151;
+    --light-border: #dee2e6;
+    --light-accent: #49cc90;
+    --light-accent-secondary: #61affe;
+    
+    --dark-primary: #1e2227;
+    --dark-secondary: #24292e;
+    --dark-text: #e8eaed;
+    --dark-text-secondary: #caced3;
+    --dark-border: #2f3439;
+    --dark-accent: #49cc90;
+    --dark-accent-secondary: #61affe;
+}
+
+/* Classe qui sera ajoutée au body quand le mode sombre est actif */
+body.dark-mode .swagger-ui {
+    color: var(--dark-text);
+}
+
+body.dark-mode .swagger-ui .opblock-tag {
+    color: var(--dark-text);
+    border-bottom: 1px solid var(--dark-border);
+}
+
+body.dark-mode .swagger-ui .opblock {
+    background: var(--dark-secondary);
+    border: 1px solid var(--dark-border);
+}
+
+body.dark-mode .swagger-ui .opblock .opblock-summary-method {
+    background: var(--dark-accent-secondary);
+}
+
+body.dark-mode .swagger-ui .opblock .opblock-summary-path {
+    color: var(--dark-text);
+}
+
+body.dark-mode .swagger-ui .opblock .opblock-summary-description {
+    color: var(--dark-text-secondary);
+}
+
+body.dark-mode .swagger-ui .opblock-description-wrapper, 
+body.dark-mode .swagger-ui .opblock-external-docs-wrapper, 
+body.dark-mode .swagger-ui .opblock-title_normal {
+    color: var(--dark-text);
+}
+
+body.dark-mode .swagger-ui .opblock-body pre.microlight {
+    background: var(--dark-primary);
+    color: var(--dark-text);
+    border: 1px solid var(--dark-border);
+}
+
+body.dark-mode .swagger-ui .scheme-container {
+    background: var(--dark-secondary);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+}
+
+body.dark-mode .swagger-ui section.models {
+    background: var(--dark-secondary);
+    border: 1px solid var(--dark-border);
+}
+
+body.dark-mode .swagger-ui section.models .model-container {
+    background: var(--dark-secondary);
+    border-bottom: 1px solid var(--dark-border);
+}
+
+body.dark-mode .swagger-ui .model-box {
+    background: var(--dark-primary);
+    border: 1px solid var(--dark-border);
+}
+
+body.dark-mode .swagger-ui .model {
+    color: var(--dark-text);
+}
+
+body.dark-mode .swagger-ui .btn {
+    background: var(--dark-secondary);
+    color: var(--dark-text);
+    border: 1px solid var(--dark-border);
+}
+
+body.dark-mode .swagger-ui select {
+    background: var(--dark-primary);
+    color: var(--dark-text);
+    border: 1px solid var(--dark-border);
+}
+
+body.dark-mode .swagger-ui input[type=text] {
+    background: var(--dark-primary);
+    color: var(--dark-text);
+    border: 1px solid var(--dark-border);
+}
+
+body.dark-mode .swagger-ui textarea {
+    background: var(--dark-primary);
+    color: var(--dark-text);
+    border: 1px solid var(--dark-border);
+}
+
+body.dark-mode .swagger-ui .info .title {
+    color: var(--dark-text);
+}
+
+body.dark-mode .swagger-ui .info li, 
+body.dark-mode .swagger-ui .info p, 
+body.dark-mode .swagger-ui .info table {
+    color: var(--dark-text-secondary);
+}
+
+/* Bouton de toggle pour le mode sombre */
+#dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px 12px;
+    background: #5755d9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#dark-mode-toggle:hover {
+    background: #4240b8;
+}
+
+#dark-mode-toggle svg {
+    width: 16px;
+    height: 16px;
+}
